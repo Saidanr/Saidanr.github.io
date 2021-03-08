@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>A place for me to show off my life</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Top menu -->
+      <link rel='stylesheet' id='bones-stylesheet-css'  href='https://kurzgesagt.org/wp-content/themes/kurzgesagt/library/css/style.css' type='text/css' media='all' />
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="https://ctflearn.com/static/css/main.css" />
+
+      <!-- SideBar -->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+      <link rel="shortcut icon" href="../../3.png">
+      <meta property="og:image" content="rush.jpg"/>
+
+
+<body class="w3-sand">
+    
+   <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-pale-blue w3-animate-right  w3-text-dark-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-center w3-padding-32" onclick="w3_close()">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button">Youtube</a>
+    <a href="#" class="w3-bar-item w3-button">Movies</a>
+    <a href="http://readcomiconline.to/" class="w3-bar-item w3-button">Comic Books</a>
+  </div>
+       
+  <!-- Header-->
+  <!-- Header-->
+  <div class="w3-container top w3-pale-blue">
+    <div id="highlight-nav" class="highlight-nav">
+      <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <ul id="menu-main-menu" class="nav top-nav cf">
+          <li id="menu-item-3577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3577"><a href="https://kurzgesagt.org/youtube/">[Яushweed]</a></li>
+          <li id="menu-item-3576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3576"><a href="media/media.html">Photos</a></li>
+          <li id="menu-item-30" class="about menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="lifehack/lifehack.html">Journal?</a></li>
+          <li id="menu-item-31" class="contact menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="ddlc.html">Top Secret</a></li>
+          <li id="menu-item-2538" class="careers menu-item menu-item-type-post_type_archive menu-item-object-job menu-item-2538"><a href="Videos/videos.html">Videos</a></li>
+          <li id="menu-item-3555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3555"><a href="https://shop-us.kurzgesagt.org">Shop</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+  <!--
+  <div>
+    <button class="w3-button w3-right w3-pale-pale-blue w3-xxlarge " onclick="w3_open()">&#9776;</button>
+</div>
+-->
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1080px;margin-top:83px">
+ 
+  <!-- Photo grid -->
+  <div class="w3-row ">
+    <div class="w3-third">
+      <img src="party.jpg" style="width:100%" onclick="onClick(this)" alt="Just a student government group picture">
+      <img src="Adama.jpg" style="width:100%" onclick="onClick(this)" alt="Cool dude I met at a conference">
+      <img src="idk.jpg" style="width:100%" onclick="onClick(this)" alt="Another Dude I met">
+   </div>
+    
+   <div class="w3-third">
+      <img src="Poly.jpg" style="width:100%" onclick="onClick(this)" alt="Group Pic at the end">
+      <img src="Adama2.jpg" style="width:100%" onclick="onClick(this)" alt="Didn't I already post this pic?">
+      <img src="Luthor.jpg" style="width:100%" onclick="onClick(this)" alt="Looking like a classic movie villain">
+    </div>
+    
+    <div class="w3-third">
+      <img src="sweater.jpg" style="width:100%" onclick="onClick(this)" alt="Well SOMEBODY is gonna have to change">
+      <img src="another.jpg" style="width:100%" onclick="onClick(this)" alt="Just some fun people in the senate">
+      <img src="SGU conference.jpg" style="width:100%" onclick="onClick(this)" alt="Typical linked in photo">
+	  </div>
+  </div>  
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="../media3/media3.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="../media.html"         class="w3-bar-item w3-button w3-hover-black">1</a>
+      <a href="../media2/media2.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#"                     class="w3-bar-item w3-black w3-button">3</a>
+      <a href="../media4/media4.html" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="../media4/media4.html" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  
+  // Modal Image Gallery
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+  </script>
+          
+  
+
+</body>
+</html>

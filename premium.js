@@ -1,0 +1,1 @@
+alert("Sorry, to view this content you must subscribe to my website \nwith 5 easy payments of 59.99$ ");
