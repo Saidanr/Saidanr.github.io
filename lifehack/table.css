@@ -1,0 +1,64 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+thead th:nth-child(1) {
+    width: 50%;
+    
+}
+
+
+th, td {
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+tbody tr td:nth-child(1) {
+    text-align: left;
+}
+
+tbody tr td:nth-child(2) {
+    text-align: center;
+}
+
+tbody tr td:nth-child(3) {
+    text-align: center;
+}
+
+tbody tr td:nth-child(4) {
+    text-align: left;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+thead tr {
+    background-color: black;
+    color: white;
+}
+
+tfoot tr {
+    background-color: black;
+    color: white; 
+}
+
+caption {
+    padding: 20px;
+    font-style: italic;
+    color: darkblue;
+    caption-side: bottom;
+    text-align: right;
+    letter-spacing: 1px;
+}
