@@ -1,108 +1,436 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  
-  
-  <title>Step 1, make a website. Step 2 ? Step 3, Profit. </title>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Top menu -->
-      <link rel='stylesheet' id='bones-stylesheet-css'  href='https://kurzgesagt.org/wp-content/themes/kurzgesagt/library/css/style.css' type='text/css' media='all' />
+  <title>Get to know a little about me</title>
+  <meta charset="utf-8">
+  <title>Rasheed Saidani</title>
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=brandico">
+  <!-- to get favicon-->
+  <link rel="icon" href="images/favicon_web.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@1,300&family=Sacramento&display=swap" rel="stylesheet">
+  <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- Custom CSS -->
-      <link rel="stylesheet" href="https://ctflearn.com/static/css/main.css" />
+  <!--JS/ Bootstrap scripts Stuff-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
 
-      <!-- SideBar -->
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-      <!-- Logo at top of page -->
-      <link rel="shortcut icon" href="brand.png">
-      <meta property="og:image" content="brand.png"/>
-    </head>
+<body>
 
-<body class="w3-sand">
-    
-   <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-pale-blue w3-animate-right  w3-text-dark-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-    <button class="w3-bar-item w3-button w3-center w3-padding-32" onclick="w3_close()">Close &times;</button>
-    <a href="#" class="w3-bar-item w3-button">Youtube</a>
-    <a href="#" class="w3-bar-item w3-button">Movies</a>
-    <a href="http://readcomiconline.to/" class="w3-bar-item w3-button">Comic Books</a>
-</div>
+  <section id="title">
+    <div class="container-fluid">
 
-  <!-- Header-->
-  <div class="w3-container top w3-pale-blue">
-    <div id="highlight-nav" class="highlight-nav">
-      <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-        <ul id="menu-main-menu" class="nav top-nav cf">
-          <li id="menu-item-3577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3577"><a href="index.html">[Яushweed]</a></li>
-          <li id="menu-item-3576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3576"><a href="media/media.html">Photos</a></li>
-          <li id="menu-item-30" class="about menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="lifehack/lifehack.html">Journal?</a></li>
-          <li id="menu-item-31" class="contact menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="ddlc.html">Top Secret</a></li>
-          <li id="menu-item-2538" class="careers menu-item menu-item-type-post_type_archive menu-item-object-job menu-item-2538"><a href="Videos/videos.html">Videos</a></li>
-          <li id="menu-item-2538" class="careers menu-item menu-item-type-post_type_archive menu-item-object-job menu-item-2538"><a href="Portfolio/Portfolio.html">Portfolio</a></li>
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-5">
+          <img class="img-of-me" src="edit.jpg" alt="Please Replace this">
+        </div>
+
+        <div class="col-lg-7">
+
+          <h1 class="my-name">Rasheed Saidani</h1>
+
+          <h2 class="bio"> Electrical and Computer Engineering Technologist. Photographer.</h2>
+
+          <!-- social media buttons-->
+          <ul class="social-buttons" id="animation">
+
+            <li>
+              <a href="https://www.linkedin.com/in/rasheed-saidani-1426241b3" class="brandico-linkedin"> <i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- sticky nav -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+
+    <a class="navbar-brand" href="">Rasheed Saidani</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#title">HOME </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">RESUME</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#art">DIGITAL ART</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="about-section">
+      <h3>About</h3>
+      <img class="about-img" src="images/drawing.png" alt="">
+      <p>I am currently a <span class="about-sec">Senior </span> concentrating in <span class="about-sec"> Electrical Engineering Technology </span> and <span class="about-sec">Computer Engineering Technology</span> at <span class="about-sec"> SUNY Polytechnic </span>!
+        As I continue to delve into this intersection between engineering, technology, and the life sciences, I am looking to work as a <span class="about-sec">Computer Engineer,
+          Controls Engineer, electrical engineer </span>
+      </p>
+
+      <p>Currently, I am a Helpdesk Assistant at SUNY Polytechnic Institude. .</p>
+
+      <br>
+      <br>
+      <p><span class="about-sec"> Interests:</span> Green Energy • Robotics • Videography • Coding</p>
+
+
+    </div>
+  </section>
+
+
+  <!-- resume-->
+  <section id="resume">
+
+    <h3>Resume</h3>
+    <br />
+    <!-- skills-->
+
+    <div class="section-title">Skill </div>
+    <div>
+      <div class="skills-container">
+        <ul>
+          <li>C++</li>
+          <li>Embedded Systems</li>
+          <li>HTML</li>
+          <li>CSS</li>
+
         </ul>
-      </nav>
-    </div>
-  </div>
 
+        <ul>
+          <li>C#</li>
+          <li>Assembly</li>
+          <li>Electronic components </li>
+          <li>Digital Systems</li>
 
-  <!--
-  <div>
-    <button class="w3-button w3-right w3-pale-pale-blue w3-xxlarge " onclick="w3_open()">&#9776;</button>
-</div>
--->
+        </ul>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content" style="width:1080px;margin-top:40px">
-    <div class="w3-container w3-pale-blue w3-center w3-text-grey w3-padding-32" id="about">
-       
-   
-    <hr class="w3-opacity">
-       
-       <br>
-       <em><strong>Sometimes you don't think it be what it is but it do</strong></em>
-   </p>
-   <p>
-       Ey yo it's ya local electrical and computer engineer
-       Currently working on finishing this site<br>
-       Here are some other things and stuff to DONG</p>
-       <br> LG, Pixels, oneplus 8t
-       
-       
-   <hr class="w3-opacity">
-   <em> warning </em><br>
-   <strong> 
-   Side effects for visiting my site include : Moderate-to-severe plague psoriasis, lockjaw,<br>
-   rickets, bitch tits, extreme immaturity, unemployment, Zika, a dead feeling inside,<br>
-   Super Herpes,  Ebola-Aids, and a heightened sense of smell.
-   <strong><hr class="w3-opacity">
-   
-       <center><img src="snap.png" height="232" width="207.5"  alt="I'd make a pretty girl">
-       </center>
-   
-   
-   <form method="get" action="/r/esume.pdf">
-     <button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">This don't work</button>
-   </form>
+        <ul>
         
-    </div>
-</div>
-   
+          <li>Microprocessors</li>
+          <li>Spanish (Written & Conversational)</li>
+          <li>Sensor Technology</li>
+          <li>Electrical circuits</li>
 
-  <script>
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-  }
-  
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-  }
-  </script>
-            
+        </ul>
+
+      </div> <!-- end skills-container-->
+
+    </div>
+
+  </section>
+
+
+  <section id="resume">
+    <!-- left bar-->
+    <div class="section-title">Experience </div>
+    <div>
+      <div class="job">
+        <div class="job-title-container">
+          <div>
+            <div class="job-company">SUNY Polytechnic</div>
+            <div class="job-title">Helpdesk Analyst</div>
+
+          </div>
+          <!--dates-->
+          <div> October 2021 - Present</div>
+
+
+        </div> <!-- end job title container-->
+        <p>
+        <ul class="size-resume">
+          <li>
+            Assisted individuals with directional questions
+          </li>
+          <li>
+            performed projects as assigned which included software hardware data reports involving self oriented attention to detail and critical thinking
+          </li>
+          <li>
+            Engaged with guest regarding their technical questions and problems. 
+          </li>
+        </ul>
+
+        </p>
+
+      </div>
+      <!--end job-->
+
+      <div class="job">
+        <div class="job-title-container">
+          <div>
+            <div class="job-company">SUNY Polytechnic</div>
+            <div class="job-title">FIRST Robotics assistant </div>
+
+          </div>
+          <!--dates-->
+          <div> sep 2017 - march 2019</div>
+
+
+        </div> <!-- end job title container-->
+        <p>
+        <ul class="size-resume">
+          <li>
+            Managed online databases in Excel 
+          </li>
+          <li>
+            Organized events and handled paperwork
+          </li>
+          <li>
+            Inspected robots and acted as referee for events 
+          </li>
+        </ul>
+        </p>
+      </div>
+      <!--end job-->
+
+      <div class="job">
+        <div class="job-title-container">
+          <div>
+            <div class="job-company">Self</div>
+            <div class="job-title">Technical support</div>
+
+          </div>
+          <!--dates-->
+          <div> October 2021 - Present</div>
+
+
+        </div> <!-- end job title container-->
+        <p>
+        <ul class="size-resume">
+          <li>
+            Provided repair and replacent estimates to customers
+          </li>
+          <li>
+            Diagnosed, troubleshoot and repaired devices
+          </li>
+        </ul>
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- professional dev-->
+<!--
+  <section id="resume">
+    <div class="section-title">Professional Development </div>
+    <div>
+      <div class="skills-container ">
+        <ul>
+          <li>Accenture Student Empowerment Program</li>
+          <li> Amazon Web Services Early Career Talent Program </li>
+          <li>Black Girls CODE</li>
+          <li>ColorStack</li>
+          
+        </ul>
+
+        <ul>
+          <li>Girls Who Code</li>
+          <li>Lyft Early Talent Access Fellow</li>
+          <li>Rewriting the Code Fellow</li>
+          <li>Ron Brown Scholar</li>
+          <li>Society of Women Engineers</li>
+          
+        </ul>
+
+        <ul>
+          <li>TEDx Speaker</li>
+          <li>National Society of Black Engineers</li>
+          <li>Society of Hispanic Professional Engineers</li>
+
+
+
+        </ul>
+
+      </div> <!-- end skills-container-->
+
+    </div>
+
+  </section>
+
+
+  <section id="resume">
+    <!-- left bar-->
+    <div class="section-title">Speaking Engagements </div>
+    <div>
+      <div class="job">
+        <div class="job-title-container">
+          <div>
+
+            <div class="job-title">SUNY Polytechnic Workshop</div>
+
+          </div>
+          <!--dates-->
+          <div> Feb 2020</div>
+
+        </div> <!-- end job title container-->
+
+
+      <!--end job-->
+        
+
+
+  </section>
+
+
+
+  <!-- Projects -->
+
+  <section id="projects">
+    <h3 class="project-header">Projects</h3>
+    <!-- multi carousel view-->
+
+    <div class="container my-6">
+
+
+      <!--Carousel Wrapper-->
+      <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+        <!--Controls
+        <div class="controls-top">
+          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+
+        </div>
+        .Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+          <li data-target="#multi-item-example" data-slide-to="1"></li>
+          <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+
+
+          <!--Second slide-->
+          <div class="carousel-item active">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card mb-2">
+                  <img class="card-img-top stock_img" src="images/stocks.jpeg" alt="Project image">
+                  <div class="card-body">
+                    <h4 class="card-title">Electric Longboard</h4>
+                    <p class="card-text">Remote controlled powered longboard, used to get around before I acquired a car. </p>
+
+                    <a class="btn btn-outline-light" href= "https://github.com/Niasemota/Stock-Trading-and-News-Alert">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top music" src="images/spotify.PNG" alt="spotify image">
+                  <div class="card-body">
+                    <h4 class="card-title">Weather Drone</h4>
+                    <p class="card-text">Using C# and arduino reads data collected by sensors and displays it onto windows application</p>
+
+
+                    <a class="btn btn-outline-light" href="https://github.com/Niasemota/Musical-Time-Machine">Learn More</a>
+                  </div>
+                </div>
+              </div>
+<!--
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/suduko.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Suduko Solver</h4>
+                    <p class="card-text">description.</p>
+                    <a class="btn btn-outline-light">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>-->
+          <!--/.Second slide-->
+
+
+        </div>
+        <!--/.Slides-->
+
+      </div>
+      <!--/.Carousel Wrapper-->
+
+    </div>
+  </section>
+
+
+  <!-- Contact Page -->
+
+  <section id="contact">
+    <div class="center">
+
+      <h3 class="contact-header">Contact</h3>
+      <p class=contact-text> Have a question or want to collaborate?</p>
+      <form class="form" action="mailto:rasheedbsaidani@gmail.com" method="post" enctype="text/plain">
+        <p class="email" type="Name:"><input placeholder="NAME"></input></p>
+        <p class="email" type="Email:"><input placeholder="EMAIL"></input></p>
+        <p class="email" type="Subject:"><input placeholder="SUBJECT"></input></p>
+        <p class="email" type="Message:"><input placeholder="MESSAGE"></input></p>
+        <button>SUBMIT</button>
+
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <ul class="social-icon">
+
+      <a href="https://www.linkedin.com/in/rasheed-saidani-1426241b3" class="fab fa-linkedin grow"></a>
+
+
+    </ul>
+
+
+  </footer>
+
 
 </body>
+
 </html>

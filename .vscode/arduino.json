@@ -1,6 +1,0 @@
-{
-    "configuration": "cpu=atmega2560",
-    "board": "arduino:avr:mega",
-    "sketch": "..\\..\\Programming\\ELEGOO The Most Complete Starter Kit for MEGA V1.0.2021.1.11\\Main.ino",
-    "port": "COM4"
-}
